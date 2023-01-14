@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- Trees -->
+ <project path="device" name="Redmi-MT6768/android_device_xiaomi_lava.git" remote="github" revision="lineage-19.1" />
+ <project path="common" name="Redmi-MT6768/android_device_xiaomi_mt6768-common.git" remote="github" revision="lineage-19.1" />
+ <project path="vendor" name="Redmi-MT6768/android_vendor_xiaomi_lava.git" remote="github" revision="twelve" />
+ <project path="kernel" name="Redmi-MT6768/android_kernel_xiaomi_mt6768.git" remote="github" revision="twelve" />
+ 
+</manifest>
