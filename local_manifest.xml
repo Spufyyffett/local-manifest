@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+ <remote name="MT6768" fetch="https://github.com/mt6768-dev" />
+ <remote name="clang" fetch="https://gitlab.com/sanjeevstunner"/>
+
  <!-- Trees -->
- <project path="device" name="Redmi-MT6768/android_device_xiaomi_lava.git" remote="github" revision="lineage-19.1" />
- <project path="common" name="Redmi-MT6768/android_device_xiaomi_mt6768-common.git" remote="github" revision="lineage-19.1" />
- <project path="vendor" name="Redmi-MT6768/android_vendor_xiaomi_lava.git" remote="github" revision="twelve" />
- <project path="kernel" name="Redmi-MT6768/android_kernel_xiaomi_mt6768.git" remote="github" revision="twelve" />
+
+ <!-- Device-Trees -->
+ <project path="Lancelot/dt" name="android_device_xiaomi_lancelot" remote="MT6768" revision="lineage-20" />
+
+ <!-- Common-Trees -->
+ <project path="Lancelot/common" name="android_device_xiaomi_mt6768-common" remote="MT6768" revision="lineage-20" />
+
+ <!-- Vendor-Trees -->
+ <project path="Lancelot/vendor" name="proprietary_vendor_xiaomi_lancelot" remote="MT6768" revision="lineage-20" />
+
+ <!-- Kernel-Trees -->
+ <project path="Lancelot/kernel" name="android_kernel_xiaomi_mt6768" remote="MT6768" revision="lineage-20" />
  
+ <!-- Common-Vendor-Trees--> 
+  <project path="Lancelot/vendor-common" name="proprietary_vendor_xiaomi_mt6768-common" remote="MT6768" revision="lineage-20"/>
+ 
+ <!-- Hardware -->
+  <project path="Lancelot/hardware" name="android_hardware_mediatek" remote="MT6768" revision="lineage-20"/>
+ 
+ <!--Clang -->
+  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
+
 </manifest>
